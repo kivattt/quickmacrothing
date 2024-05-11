@@ -12,6 +12,8 @@ const pageUp = 0xff55
 var hk *hotkey.Hotkey
 
 func main() {
+	println("Page up hotkey started!")
+
 	robotgo.KeySleep = 10
 
 	hk = hotkey.New([]hotkey.Modifier{}, pageUp)
